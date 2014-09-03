@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tecvallartadrone.MainActivity"
+    tools:ignore="Deprecated" >
+
+    <Switch
+        android:id="@+id/btnSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" />
+
+    <RelativeLayout
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        tools:ignore="PxUsage,UselessParent" >
+
+        <Button
+            android:id="@+id/btnATR"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/aba" />
+
+        <Button
+            android:id="@+id/btnIZQ"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_above="@+id/btnATR"
+            android:layout_toLeftOf="@+id/btnATR"
+            android:background="@drawable/izq" />
+
+        <Button
+            android:id="@+id/btnDER"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_above="@+id/btnATR"
+            android:layout_toRightOf="@+id/btnATR"
+            android:background="@drawable/derr" />
+
+        <Button
+            android:id="@+id/btnNEU"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_above="@+id/btnATR"
+            android:layout_toLeftOf="@+id/btnDER"
+            android:background="@drawable/neuto" />
+
+        <Button
+            android:id="@+id/btnADE"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_above="@+id/btnDER"
+            android:layout_toLeftOf="@+id/btnDER"
+            android:background="@drawable/arr" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:max="750" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="255dp"
+        android:layout_height="142dp"
+        android:src="@drawable/its_pto_v" />
+
+</LinearLayout>

@@ -63,7 +63,7 @@ void setup() {
 void loop() {
 
  motorXN.writeMicroseconds(1400);
- motorYP.writeMicroseconds(1400);
+ /*motorYP.writeMicroseconds(1400);
 
 
   if(lecturaAngulo(0) < 178 ){
@@ -78,24 +78,30 @@ void loop() {
     if(velY > 1000){
     velY=velY-5;
     }
+  }*/
+motorXP.writeMicroseconds(1400);
+  /*if(lecturaAngulo(1) < 178  &&  lecturaAngulo(1) > 182){
+    motorXP.writeMicroseconds(velX);
+  
   }
+  else{
 
-  if(lecturaAngulo(1) < 178 ){
+  if(lecturaAngulo(1) < 178){
     motorXP.writeMicroseconds(velX);
    if(velX > 1000){
     velX=velX-5;
     }
   }
-
   if(lecturaAngulo(1) > 182){
     motorXP.writeMicroseconds(velX);
     if(velX<1999){
     velX=velX+5;
-    }
+    }  
   }
+}
 
-  delay(40);
-
+  delay(150);
+*/
 
 }
 
